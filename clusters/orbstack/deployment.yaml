@@ -25,7 +25,7 @@ spec:
 
           env:
             - name: MESSAGE
-              value: "hello from Git v1"
+              value: "hello from Git v2 - deployed by Argo CD"
 
           readinessProbe:
             httpGet:
