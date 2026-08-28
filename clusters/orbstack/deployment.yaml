@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: gitops-lab:v1
+          image: k8s-lab005:v1
           imagePullPolicy: IfNotPresent
 
           ports:
