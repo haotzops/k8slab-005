@@ -10,18 +10,18 @@ spec:
 
     source:
         repoURL: https://github.com/haotzops/k8slab-005.git
-    targetRevision: main
-    path: clusters/orbstack
+        targetRevision: main
+        path: clusters/orbstack
 
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: gitops-lab
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: gitops-lab
 
-  syncPolicy:
-    automated:
-      enabled: true
-      prune: true
-      selfHeal: true
+    syncPolicy:
+        automated:
+            enabled: true
+            prune: true
+            selfHeal: true
 
-    syncOptions:
-      - CreateNamespace=true
+        syncOptions:
+            - CreateNamespace=true
